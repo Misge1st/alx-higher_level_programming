@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
-if __name__ == "__import__":
+# 4-hidden_discovery.py
+if __name__ == "__main__":
+    """a program to print the contents of a compile python module"""
     import hidden_4
-
-    lis = dir(hidden_4)
-    for i in lis:
-        if i[:2] != "__":
-            print(i)
+    contents = dir(hidden_4)
+    for i in contents:
+        if "__" not in i:
+            print("{}".format(i))
