@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-def no_c(my_string):
-    new_str = ''
-    for i in my_string:
-        if i != 'c' or i != 'C':
-            new_str += i
-    return new_str
+# 3-print_reversed integer
+def print_reversed_list_integer(my_list=[]):
+    if isinstance(my_list, list):
+        my_list.reverse()
+        for i in my_list:
+            print("{:d}".format(i))
